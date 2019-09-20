@@ -13,12 +13,13 @@ public class HomeController {
     @ResponseBody
     public ApiResponse get() {
         return ApiResponse.ofMessage(200, "成功");
-
     }
 
     @GetMapping("/test")
-    @ResponseBody
+//    @ResponseBody 有这个就不行
     public String test() {
         return "404";
     }
+
+
 }
